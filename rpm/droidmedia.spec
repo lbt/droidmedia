@@ -35,6 +35,7 @@ BuildArch:     noarch
 
 %setup -T -c -n droidmedia
 
+sudo chown -R 399:399 /home/abuild/src/droid/
 mv /home/abuild/src/droid/* .
 mkdir -p external
 pushd external
